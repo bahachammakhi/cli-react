@@ -13,7 +13,7 @@ class :className extends Component {
 }
 :className.propTypes = {
 }
-`
+`;
 
 const functional = `
 const :className = () => {
@@ -24,38 +24,40 @@ const :className = () => {
 }
 :className.propTypes = {
 }
-`
+`;
 
 const imports = {
   react: "import React, {Component} from 'react';",
   propTypes: "import PropTypes from 'prop-types';",
-stylesheet: "import './:className.scss';",
+  stylesheet: "import './:className.scss';",
   observable: "import { inject, observer } from 'mobx-react';",
-  connect: "import {connect} from 'react-redux';"
-}
+  connect: "import {connect} from 'react-redux';",
+};
 
 const exported = {
   default: "export default :className;",
   observable: "export default (observer(:className));",
-  connectDispatch: "export default connect(null, mapDispatchToProps)(:className);",
-  connectStateAndDispatch: "export default connect(mapStateToProps, mapDispatchToProps)(:className);"
-}
+  connectDispatch:
+    "export default connect(null, mapDispatchToProps)(:className);",
+  connectStateAndDispatch:
+    "export default connect(mapStateToProps, mapDispatchToProps)(:className);",
+};
 
 const mapStateToProps = `
 function mapStateToProps(state, ownProps) { 
   return {};
 };
-`
+`;
 
 const mapDispatchToProps = `
 function mapDispatchToProps(dispatch) {  
   return {};
 }
-`
+`;
 
 module.exports = {
   main: main,
   imports: imports,
   exported: exported,
-  functional: functional
-}
+  functional: functional,
+};
