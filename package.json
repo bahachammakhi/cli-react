@@ -1,17 +1,17 @@
 {
-  "name": "cli-react",
-  "version": "2.0.8",
+  "name": "@bahachammakhi/react-cli",
+  "version": "0.0.1",
   "description": "A npm package to generate a react boilerplate with : sass, mobx, routing, protected routes. Also with the possibilty to generate react components from the command line with options to generate stylesheet, functional components and observer components",
   "main": "index.js",
   "bin": {
-    "rct": "index.js"
+    "rcli": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nickverstocken/cli-react"
+    "url": "git+https://github.com/nickverstocken/cli-react.git"
   },
   "author": "Nick Verstocken",
   "license": "MIT",
@@ -23,5 +23,17 @@
     "json": "^9.0.6",
     "replace": "^0.3.0",
     "shelljs": "^0.7.8"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/nickverstocken/cli-react/issues"
+  },
+  "homepage": "https://github.com/nickverstocken/cli-react#readme",
+  "devDependencies": {},
+  "keywords": [
+    "react",
+    "cli",
+    "context",
+    "page",
+    "component"
+  ]
 }
