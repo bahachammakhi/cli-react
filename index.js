@@ -25,6 +25,13 @@ program
   .option("-o, --observable", "Make observable")
   .option("-s, --style", "With stylesheet")
   .option("-f, --functional", "Create functional component")
+  .action(createComponent);
+program
+  .command("gm <component>")
+  .option("-n, --nofolder", "Do not wrap component in folder")
+  .option("-o, --observable", "Make observable")
+  .option("-s, --style", "With stylesheet")
+  .option("-f, --functional", "Create functional component")
   .action(createModule);
 program.parse(process.argv);
 async function createReact(dir) {
