@@ -111,23 +111,28 @@ project
 ```
 ### Generate Component
 Run
->```rct gc <ComponentName>```
+>```rcli gc <ComponentName>```
 
 This will create a folder of your component name, and a class component js file of the same name.
 You can also give paths to the component name for example :
->```rct gc component/comp1``` => will create a component within the component folder (and make it if it doesn't exist). 
+>```rcli gc component/comp1``` => will create a component within the component folder (and make it if it doesn't exist). 
+>
+### Generate a page module 
+Run
+?```rcli gm page/BranchPage``` => Will create a whote module within the page folder 
+
 #### Options
 Create a functional component
->```rct gc <ComponentName> -f``` <b>or</b> ```rct gc <ComponentName> --functional```
+>```rcli gc <ComponentName> -f``` <b>or</b> ```rct gc <ComponentName> --functional```
 
 Create a component with css
->```rct gc <ComponentName> -s``` <b>or</b> ```rct gc <ComponentName> --style```
+>```rcli gc <ComponentName> -s``` <b>or</b> ```rct gc <ComponentName> --style```
 
 Create a component and make it an oberserver
->```rct gc <ComponentName> -o``` <b>or</b> ```rct gc <ComponentName> --observable```
+>```rcli gc <ComponentName> -o``` <b>or</b> ```rct gc <ComponentName> --observable```
 
 Create a component but don't wrap it in a folder
->```rct gc <ComponentName> -n``` <b>or</b> ```rct gc <ComponentName> --nofolder```
+>```rcli gc <ComponentName> -n``` <b>or</b> ```rct gc <ComponentName> --nofolder```
 
 
 
